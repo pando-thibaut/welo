@@ -1,0 +1,196 @@
+[
+    {
+        "key": "group_624aec818b0f6",
+        "title": "ACF Block - Header slider",
+        "fields": [
+            {
+                "key": "field_624aec8cd1b34",
+                "label": "Slides",
+                "name": "slides",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_624aeca9d1b35",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_624aecb1d1b36",
+                        "label": "Content",
+                        "name": "content",
+                        "type": "flexible_content",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layouts": {
+                            "layout_624aecbe32393": {
+                                "key": "layout_624aecbe32393",
+                                "name": "title",
+                                "label": "Titre",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_624aecc8d1b37",
+                                        "label": "Texte",
+                                        "name": "texte",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            "layout_624aecddd1b38": {
+                                "key": "layout_624aecddd1b38",
+                                "name": "pre-title",
+                                "label": "Pre-Titre",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_624aecddd1b39",
+                                        "label": "Texte",
+                                        "name": "texte",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            "layout_624aececd1b3a": {
+                                "key": "layout_624aececd1b3a",
+                                "name": "button",
+                                "label": "Bouton",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_624aececd1b3b",
+                                        "label": "Texte",
+                                        "name": "texte",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "50",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_624aecf8d1b3c",
+                                        "label": "Link",
+                                        "name": "link",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "50",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            }
+                        },
+                        "button_label": "Ajouter un élément",
+                        "min": "",
+                        "max": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/page-header-slider"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": false
+    }
+]

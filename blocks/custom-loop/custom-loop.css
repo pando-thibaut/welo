@@ -1,0 +1,19 @@
+.custom-loop-admin-title {
+    font-weight: 400;
+    font-size: 20px;
+    background: #2271b1;
+    padding: 10px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.custom-loop-admin-info {
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.custom-loop-admin {
+    border: 1px solid #2271b1;
+    padding-bottom: 20px;
+}
