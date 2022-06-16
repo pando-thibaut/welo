@@ -58,6 +58,9 @@ function theme_external_libs()
     wp_enqueue_style('tiny-slider-stylesheet',  'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css', array(), _PNDO_VERSION);
     wp_register_script('wp-tiny-slider-js',  'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js',array(), _PNDO_VERSION, true);
     wp_enqueue_script('wp-tiny-slider-js');
+
+    wp_register_script('imageloaded-js',  'https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js',array(), _PNDO_VERSION, true);
+    wp_enqueue_script('imageloaded-js');
 }
 
 add_action('wp_enqueue_scripts', 'pndogutenberg_css_js');
@@ -83,6 +86,7 @@ add_action( 'after_setup_theme', 'pndo_content_width', 0 );
 require_once get_template_directory() . '/blocks/page-header-slider/register.php';
 require_once get_template_directory() . '/blocks/slider-anything/register.php';
 require_once get_template_directory() . '/blocks/custom-loop/register.php';
+require_once get_template_directory() . '/blocks/backend-comment/register.php';
 
 
 // Register the three useful image sizes for use in Add Media modal
@@ -98,3 +102,34 @@ function setup() {
     add_image_size( 'fullwidth', 1920, 99999 );
 
 }
+
+
+function default_blocks_cuisine()
+{
+    $template = array(
+        array('acf/backend-comment', array(
+            'align' => '',
+            'mode' => 'preview',
+            'data' => array("comment" => "Ci-dessous, Le contenu présent dans la liste de cuisine de la page d'accueil de la cuisine<hr />"),
+            'className' => "not-editable"
+        )),
+        array('acf/image-markers', array(
+            'align' => '',
+            'mode' => 'preview',
+        )),
+        array('acf/backend-comment', array(
+            'align' => '',
+            'mode' => 'preview',
+            'data' => array("comment" => "Ci-dessous, le contenu de la page \"Détails\" de la cuisine<hr />"),
+            'className' => "not-editable"
+        )),
+        array('acf/image-markers', array(
+            'align' => '',
+            'mode' => 'preview',
+        ))
+    );
+    $post_type_object = get_post_type_object('post');
+    $post_type_object->template = $template;
+}
+
+add_action('init', 'default_blocks_cuisine', 20);

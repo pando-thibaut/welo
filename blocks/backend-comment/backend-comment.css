@@ -1,0 +1,8 @@
+.backend-comment {
+    color: #257cba;
+}
+
+.backend-comment.not-editable,
+.wp-block.not-editable {
+    pointer-events: none;
+}
